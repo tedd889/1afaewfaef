@@ -1,0 +1,22 @@
+// Complex Structure
+digraph {
+	node [fillcolor=white shape=box style=filled]
+	t [label="{t}" color=red]
+	z_x_y_s [label="{z, x, y, s}:2"]
+	z_x_y_r [label="{z, x, y, r}:1"]
+	subgraph cluster_vertical {
+		rankdir=TB
+		y [label="y:3"]
+		x [label="x:3" pos="! 0,-1!"]
+		z [label="z:3" pos="! 0,-2!"]
+		Null [label=Null pos="! 0,-3!"]
+		y -> x
+		x -> z
+		z -> Null
+	}
+	t -> z_x_y_s
+	t -> z_x_y_r
+	z_x_y_s -> y
+	z_x_y_r -> y
+	graph [rankdir=LR]
+}

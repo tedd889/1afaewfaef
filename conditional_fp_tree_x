@@ -1,0 +1,7 @@
+// FP-tree
+digraph {
+	dpi=300
+	null_0 [label="null:0"]
+	z_3 [label="z:3"]
+	null_0 -> z_3
+}

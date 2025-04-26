@@ -1,0 +1,35 @@
+// FP-tree
+digraph {
+	dpi=300
+	null_0 [label="null:0"]
+	z_5 [label="z:5"]
+	null_0 -> z_5
+	r_1 [label="r:1"]
+	z_5 -> r_1
+	r_1 -> r_1 [color=red style=dashed]
+	x_3 [label="x:3"]
+	z_5 -> x_3
+	y_2 [label="y:2"]
+	x_3 -> y_2
+	t_2 [label="t:2"]
+	y_2 -> t_2
+	s_2 [label="s:2"]
+	t_2 -> s_2
+	s_2 -> s_1 [color=red style=dashed]
+	t_2 -> t_1 [color=red style=dashed]
+	y_2 -> y_1 [color=red style=dashed]
+	r_1 [label="r:1"]
+	x_3 -> r_1
+	y_1 [label="y:1"]
+	r_1 -> y_1
+	t_1 [label="t:1"]
+	y_1 -> t_1
+	x_3 -> x_1 [color=red style=dashed]
+	x_1 [label="x:1"]
+	null_0 -> x_1
+	r_1 [label="r:1"]
+	x_1 -> r_1
+	s_1 [label="s:1"]
+	r_1 -> s_1
+	r_1 -> r_1 [color=red style=dashed]
+}

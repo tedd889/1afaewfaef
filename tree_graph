@@ -1,0 +1,10 @@
+// Tree Diagram
+digraph {
+	Null [label=Null]
+	y3 [label="y:3"]
+	x3 [label="x:3"]
+	z3 [label="z:3"]
+	Null -> y3
+	y3 -> x3
+	x3 -> z3
+}

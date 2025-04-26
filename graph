@@ -1,0 +1,25 @@
+// The Graph
+digraph {
+	node [fillcolor=white shape=box style=filled]
+	t [label="{t}" color=red fillcolor=white shape=box style=filled]
+	"z,x,y,s" [label="{z, x, y, s}:2" fillcolor=white shape=box style=filled]
+	"z,x,y,r" [label="{z, x, y, r}:1" fillcolor=white shape=box style=filled]
+	y [label="y:3" fillcolor=white shape=box style=filled]
+	x [label="x:3" fillcolor=white shape=box style=filled]
+	z [label="z:3" fillcolor=white shape=box style=filled]
+	Null [label=Null fillcolor=white shape=box style=filled]
+	"t,z" [label="{t, z}" color=red fillcolor=white shape=box style=filled]
+	"t,x" [label="{t, x}" color=red fillcolor=white shape=box style=filled]
+	"t.y" [label="{t. y}" color=red fillcolor=white shape=box style=filled]
+	t -> "z,x,y,s"
+	t -> "z,x,y,r"
+	"z,x,y,s" -> y
+	"z,x,y,r" -> y
+	y -> x
+	x -> z
+	z -> Null
+	z -> "t,z"
+	x -> "t,x"
+	y -> "t.y"
+	edge [arrowhead=normal color=black]
+}

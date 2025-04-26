@@ -1,0 +1,57 @@
+// My Graph
+digraph {
+	start [label="{t}" color=black shape=ellipse]
+	set1 [label="{z, x, y, s}:2" color=black shape=ellipse]
+	set2 [label="{z, x, y, r}:1" color=black shape=ellipse]
+	start -> set1
+	start -> set2
+	y1 [label="y:3" color=black shape=ellipse]
+	x1 [label="x:3" color=black shape=ellipse]
+	z1 [label="z:3" color=black shape=ellipse]
+	set1 -> y1
+	set1 -> x1
+	set1 -> z1
+	set3 [label="{t, z}" color=black shape=ellipse]
+	set4 [label="{x, y}:3" color=black shape=ellipse]
+	y1 -> set3
+	x1 -> set3
+	z1 -> set3
+	set3 -> set4
+	y2 [label="y:3" color=black shape=ellipse]
+	x2 [label="x:3" color=black shape=ellipse]
+	set4 -> y2
+	set4 -> x2
+	set5 [label="{t, z, x}" color=black shape=ellipse]
+	set6 [label="{y}:3" color=black shape=ellipse]
+	y2 -> set5
+	x2 -> set5
+	set5 -> set6
+	null1 [label=Null color=gray shape=box]
+	set6 -> null1
+	y3 [label="y:3" color=black shape=ellipse]
+	null1 -> y3
+	set7 [label="{t, z, x, y}" color=black shape=ellipse]
+	set8 [label="{}:3" color=black shape=ellipse]
+	y3 -> set7
+	set7 -> set8
+	set9 [label="{t, x}" color=black shape=ellipse]
+	set10 [label="{y}:3" color=black shape=ellipse]
+	x1 -> set9
+	set9 -> set10
+	null2 [label=Null color=gray shape=box]
+	set10 -> null2
+	y4 [label="y:3" color=black shape=ellipse]
+	null2 -> y4
+	set11 [label="{t, x, y}" color=black shape=ellipse]
+	set12 [label="{}:3" color=black shape=ellipse]
+	y4 -> set11
+	set11 -> set12
+	set13 [label="{t, y}" color=black shape=ellipse]
+	set14 [label="{}:3" color=black shape=ellipse]
+	y1 -> set13
+	set13 -> set14
+	set15 [label="{t, z, y}" color=black shape=ellipse]
+	set16 [label="{}:3" color=black shape=ellipse]
+	y2 -> set15
+	set15 -> set16
+}
